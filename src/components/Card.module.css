@@ -1,0 +1,36 @@
+.card {
+  flex: 1 1 300px;
+  position: relative;
+  background-color: hsl(var(--bkg));
+  box-shadow: 2px 2px 40px hsl(var(--muted) / .5);
+  padding: var(--space-lg);
+  border-radius: var(--round-lg);
+  border-top: .1em solid white;
+  border-left: .1em solid white;
+  max-width: var(--content);
+}
+
+.body {
+  max-width: var(--content);
+}
+
+.image {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16/12;
+  object-fit: cover;
+  border-radius: var(--round-md);
+}
+
+.indicator {
+  position: absolute;
+  right: 0;
+  background-color: hsl(var(--accent));
+  color: hsl(var(--bkg));
+  border-radius: var(--round-full);
+  aspect-ratio: 1/1;
+  display: grid;
+  place-items: center;
+  padding: var(--space-sm);
+  transform: translate(50%, -50%);
+}

@@ -1,0 +1,11 @@
+.App {
+  display: grid;
+  place-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-lg);
+}

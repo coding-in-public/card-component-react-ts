@@ -1,0 +1,13 @@
+.badge {
+  padding: .5em 1em;
+  border: .1em solid hsl(var(--accent2));
+  background-color: hsl(var(--bkg));
+  color: hsl(var(--accent2));
+  border-radius: var(--round-sm);
+  max-width: max-content;
+}
+
+.filled {
+  background-color: hsl(var(--accent2));
+  color: hsl(var(--bkg));
+}

@@ -1,0 +1,47 @@
+.btn {
+  --type: transparent;
+  --fill: transparent;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--fs-300);
+  line-height: var(--lh-1);
+  text-decoration: none;
+  cursor: pointer;
+  padding: .5em 1em;
+  border-width: .1em;
+  border-style: solid;
+  border-color: var(--type);
+  border-radius: var(--round-sm);
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: var(--fill);
+  color: var(--type);
+  max-width: max-content;
+}
+
+.btn svg {
+  height: var(--fs-300);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:is(:hover, :focus-visible){
+  box-shadow:
+    0 0 0 3px hsl(var(--bkg)),
+    0 0 0 6px var(--type);
+}
+
+.primary {
+  --type: hsl(var(--accent));
+}
+
+.secondary {
+  --type: hsl(var(--accent2));
+}
+
+.filled {
+  --fill: var(--type);
+  color: hsl(var(--bkg));
+}

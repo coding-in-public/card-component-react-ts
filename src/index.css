@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* fonts */
+  --fs-200: 14px;
+  --fs-300: 20px;
+  --fs-400: 22px;
+  --fs-500: 32px;
+  --lh-1: 1;
+  --lh-1-1: 1.1;
+  --lh-1-4: 1.4;
+
+  /* colors */
+  --bkg: 248 80% 98%;
+  --muted: 248 15.7% 80%;
+  --text: 246 76% 4.9%;
+  --accent: 245 75% 54.5%;
+  --accent2: 40 98.2% 43.7%;
+
+  /* utils */
+  --space-sm: clamp(0.4rem, 1.5vw, .8rem);
+  --space-md: clamp(1rem, 2.5vw, 1.4rem);
+  --space-lg: clamp(2rem, 4vw, 2.2rem);
+  --content: 50ch;
+  --round-sm: 4px;
+  --round-md: 10px;
+  --round-lg: 15px;
+  --round-full: 100vmax;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: var(--space-lg);
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: var(--fs-400);
+  line-height: var(--lh-1-4);
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  background-color: hsl(var(--bkg));
+  color: hsl(var(--text));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: var(--lh-1-1);
+  font-size: var(--fs-500);
+}
+
+small {
+  font-size: var(--fs-200);
+  line-height: var(--lh-1);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.stack-lg {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.stack-md {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.stack-sm {
+  display: grid;
+  gap: var(--space-sm);
+}
